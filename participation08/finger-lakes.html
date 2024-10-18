@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Travel Central New York</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Londrina+Sketch&display=swap" rel="stylesheet">
+    <style>
+          .gallery {
+            display: flex;
+            flex-wrap: wrap; 
+            justify-content: center; 
+            gap: 10px; 
+            margin: 20px; 
+        }
+
+        .londrina-sketch-regular {
+            font-family: "Londrina Sketch", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+        }
+
+        .gallery img {
+            max-width: 100%; 
+            height: auto; 
+            flex: 1 1 200px; 
+            border-radius: 8px; 
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+        }
+
+        @media (max-width: 600px) {
+            .gallery img {
+                flex: 1 1 100%; 
+            }
+        }
+  
+        header {
+            color: #1B6988;
+        }
+
+        header h1 {
+            font-family: "Londrina Sketch", sans-serif;
+            font-size: 4em;
+        }
+
+        header p {
+            font-family: "Times New Roman", sans-serif;
+        }
+
+        nav {
+            background-color: #041C58;
+            padding: 10px;
+            margin-bottom: 30px;
+            color: #F4F6FF;
+        }
+
+        nav a {
+            background-color: #F5A524;
+        }
+
+        nav a:hover {
+            background-color: #FF667D;
+        }
+
+        footer {
+            background-color: #9c6bdb;
+            text-align-last: center;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <a href="#">Home</a> |
+            <a href="#">Destinations</a> |
+            <a href="#">Blog</a> |
+            <a href="#">About Us</a> |
+            <a href="#">Contact</a> |
+        </nav>
+        <h1>Welcome to Central New York</h1>
+        <p>Discover the hidden gems of the Finger Lakes, Adirondacks, and beyond!</p>
+    </header>
+
+    <main>
+        <section id="featured-destination">
+            <h2>Featured Destination: Finger Lakes</h2>
+            <p>Explore the stunning Finger Lakes region, known for its beautiful lakes, wineries, and scenic hiking trails. Whether you're looking to relax by the water or enjoy outdoor activities, the Finger Lakes has something for everyone.</p>
+        </section>
+
+        <section id="top-attractions">
+            <h2>Top Attractions</h2>
+            <div class="attractions-section">
+            <article class="article1">
+                <h3>Adirondack Mountains</h3>
+                <img src="./images/pexels-adirondacks.jpg" alt="Image 1">
+                <p>Perfect for nature lovers, the Adirondacks offer breathtaking views, hiking, and camping opportunities. Don't miss a chance to explore these magnificent mountains.</p>
+            </article>
+
+            <article class="article2">
+                <h3>Syracuse</h3>
+                <img src="./images/pexels-upstate.jpg" alt="Image 4">
+                <p>A vibrant city with a rich history, Syracuse is home to museums, parks, and the renowned Syracuse University. Be sure to visit the city's downtown for great food and entertainment.</p>
+            </article>
+
+            <article class="article3">
+                <h3>Niagara Falls</h3>
+                <img src="./images/pexels-niagara.jpg" alt="Image 2">
+                <p>One of the most famous natural wonders in the world, Niagara Falls is a must-see. Whether you view it from a boat tour or one of the observation decks, the falls are a breathtaking sight.</p>
+            </article>
+
+            <article class="article4">
+                <h3>Seneca Lake</h3>
+                <img src="./images/pexels-seneca-lake.jpg" alt="Image 3">
+                <p>The banks of the blue water of Seneca Lake create a relaxing experience for swimmers and picnickers.</p>
+            </article>
+
+            <article class="article5">
+                <h3>Ithaca</h3>
+                <p>Ithaca is famous for its many waterfalls, more than 100 within 10 miles of downtown. If you put them all together, it's a waterfall 7,342 feet tall. That's 1.39 miles of falling water!</p>
+            </article>
+        </div>
+        </section>
+
+        <section id="travel-tips">
+            <h2>Travel Tips</h2>
+            <ul>
+                <li>Best Time to Visit: Spring and fall offer the best weather and fewer crowds.</li>
+                <li>Travel Options: The region is best explored by car, but bus and train services are available.</li>
+                <li>What to Pack: Comfortable shoes for hiking, a light jacket for cooler evenings, and a camera for capturing the stunning landscapes.</li>
+            </ul>
+        </section>
+    </main>
+
+
+   
+   
+    
+    
+    <footer>
+        <p>&copy; 2024 Travel Central New York. All rights reserved.</p>
+        <p><a href="#">Privacy Policy</a> | <a href="#">Terms of Use</a></p>
+    </footer>
+
+</body>
+</html>
