@@ -22,6 +22,26 @@
             font-style: normal;
         }
 
+        .attractions-section {
+            display: flex;
+            flex-wrap: wrap;
+            margin: 50px;
+            justify-content: space-around;
+        }
+        
+        .attractions-section > div {
+            flex: 1 1 300px;
+            margin: 10px;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            background-color: aquamarine;
+        }
+
+        p {
+            max-width: 300px;
+        }
+
         .gallery img {
             max-width: 100%; 
             height: auto; 
@@ -68,6 +88,7 @@
             background-color: #9c6bdb;
             text-align-last: center;
         }
+
     </style>
 </head>
 <body>
@@ -93,35 +114,41 @@
         <section id="top-attractions">
             <h2>Top Attractions</h2>
             <div class="attractions-section">
-            <article class="article1">
-                <h3>Adirondack Mountains</h3>
-                <img src="./images/pexels-adirondacks.jpg" alt="Image 1">
-                <p>Perfect for nature lovers, the Adirondacks offer breathtaking views, hiking, and camping opportunities. Don't miss a chance to explore these magnificent mountains.</p>
-            </article>
-
-            <article class="article2">
-                <h3>Syracuse</h3>
-                <img src="./images/pexels-upstate.jpg" alt="Image 4">
-                <p>A vibrant city with a rich history, Syracuse is home to museums, parks, and the renowned Syracuse University. Be sure to visit the city's downtown for great food and entertainment.</p>
-            </article>
-
-            <article class="article3">
-                <h3>Niagara Falls</h3>
-                <img src="./images/pexels-niagara.jpg" alt="Image 2">
-                <p>One of the most famous natural wonders in the world, Niagara Falls is a must-see. Whether you view it from a boat tour or one of the observation decks, the falls are a breathtaking sight.</p>
-            </article>
-
-            <article class="article4">
-                <h3>Seneca Lake</h3>
-                <img src="./images/pexels-seneca-lake.jpg" alt="Image 3">
-                <p>The banks of the blue water of Seneca Lake create a relaxing experience for swimmers and picnickers.</p>
-            </article>
-
-            <article class="article5">
-                <h3>Ithaca</h3>
-                <p>Ithaca is famous for its many waterfalls, more than 100 within 10 miles of downtown. If you put them all together, it's a waterfall 7,342 feet tall. That's 1.39 miles of falling water!</p>
-            </article>
-        </div>
+                <div>
+                    <article class="article1">
+                    <h3>Adirondack Mountains</h3>
+                    <img src="./images/pexels-adirondacks.jpg" alt="Image 1">
+                    <p>Perfect for nature lovers, the Adirondacks offer breathtaking views, hiking, and camping opportunities. Don't miss a chance to explore these magnificent mountains.</p>
+                    </article>
+                </div>
+                <div>
+                    <article class="article2">
+                    <h3>Syracuse</h3>
+                    <img src="./images/pexels-upstate.jpg" alt="Image 4">
+                    <p>A vibrant city with a rich history, Syracuse is home to museums, parks, and the renowned Syracuse University. Be sure to visit the city's downtown for great food and entertainment.</p>
+                    </article>
+                </div>
+                <div>    
+                    <article class="article3">
+                    <h3>Niagara Falls</h3>
+                    <img src="./images/pexels-niagara.jpg" alt="Image 2">
+                    <p>One of the most famous natural wonders in the world, Niagara Falls is a must-see. Whether you view it from a boat tour or one of the observation decks, the falls are a breathtaking sight.</p>
+                    </article>
+                </div>
+                <div>    
+                    <article class="article4">
+                    <h3>Seneca Lake</h3>
+                    <img src="./images/pexels-seneca-lake.jpg" alt="Image 3">
+                    <p>The banks of the blue water of Seneca Lake create a relaxing experience for swimmers and picnickers.</p>
+                    </article>
+                </div>
+                <div>   
+                    <article class="article5">
+                    <h3>Ithaca</h3>
+                    <p>Ithaca is famous for its many waterfalls, more than 100 within 10 miles of downtown. If you put them all together, it's a waterfall 7,342 feet tall. That's 1.39 miles of falling water!</p>
+                    </article>
+                </div>        
+            </div>
         </section>
 
         <section id="travel-tips">
@@ -133,11 +160,6 @@
             </ul>
         </section>
     </main>
-
-
-   
-   
-    
     
     <footer>
         <p>&copy; 2024 Travel Central New York. All rights reserved.</p>
