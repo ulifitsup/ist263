@@ -1,0 +1,97 @@
+body {
+    background-color: #F4F6FF;
+    color: #000000;
+}
+
+nav {
+    background-color: #10375C;
+    padding: 10px;
+    margin-bottom: 30px;
+    color: #F4F6FF;
+}
+
+nav a {
+    background-color: #EB8317;
+}
+
+nav a:hover {
+    background-color:#F3C623;
+}
+
+header {
+    float: left;
+    margin: 40px;
+}
+
+.banner {
+    max-width: 100%;
+}
+
+.clear {
+    clear: both;
+}
+
+.footer {
+    float: left;
+}
+
+.quote {
+    float: right;
+}
+
+.part1 {
+    display: flex;
+    padding: 20px; 
+}
+
+.part2 {
+    display: flex;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+
+.address,.linkedin,.form,.gmap {
+    margin: 20px;
+    border: 1px solid #fc6500;
+    text-align: center;
+}
+
+.address {
+    flex: 1;
+    order: 1;
+    background-color: aqua;
+    border-radius: 2em;
+}
+
+.linkedin {
+    flex: 1;
+    order: 2;
+    background-color: aqua;
+    border-radius: 2em;
+}
+
+.form {
+    flex: 1;
+    order: 1;
+    background-color: aqua;
+    border-radius: 2em;
+    width: 400px;
+}
+
+.gmap {
+    flex: 2;
+    order: 2;
+    background-color: aqua;
+    border-radius: 2em;
+}
+
+@media screen and (max-width: 600px) {
+    nav a {
+        width: 100%;
+        display: block;
+        margin: 5px;
+    }
+    span {
+        display: none;
+    }
+}
