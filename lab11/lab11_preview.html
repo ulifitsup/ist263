@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<!-- saved from url=(0050)https://jdscharf.github.io/ist263/lab11/lab11.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <script>
+        function winning() {
+            document.getElementById("message").innerHTML = "You win!";
+        }
+        function tryAgain() {
+            document.getElementById("message").innerHTML = "Try again!";
+        }
+        function ShuffleShels() {
+            document.getElementById("first").style.order = Math.floor((Math.random() * 3) + 2);
+        }
+    </script>
+    <style>
+        .container {
+            display: flex;        
+        }
+        #first { order: 1;}
+        #second { order: 2;}
+        #third { order: 3;}
+    </style>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 11</title>
+    <link rel="stylesheet" href="./Lab 11_files/animate2.css">
+</head>
+<body onload="ShuffleShels()">
+    <h1>Choose a Walnut</h1>
+    <div class="container">
+        <img src="./Lab 11_files/walnut.png" alt="first walnut" id="first" onclick="winning()">
+        <img src="./Lab 11_files/walnut.png" alt="second walnut" id="second" onclick="tryAgain()">
+        <img src="./Lab 11_files/walnut.png" alt="third walnut" id="third" onclick="tryAgain()">
+    </div>
+    <div id="message"></div>
+<div><template shadowrootmode="closed"><iframe hidden="" id="dS437MvV" frameborder="0" src="chrome-extension://ekhagklcjbdpajgpjgmbionohlpdbjgc/translateSandbox/translateSandbox.html" style="width: 0px; height: 0px; display: none;"></iframe></template></div></body></html>
