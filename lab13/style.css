@@ -13,6 +13,7 @@ nav {
 }
 
 nav a {
+    color: rgb(240, 0, 0);
     background-color: #09ff00;
 }
 
@@ -21,7 +22,7 @@ nav a:hover {
 }
 
 nav a:visited {
-   color: rgb(240, 0, 0);
+   color: rgb(92, 0, 0);
 }
 
 header {
