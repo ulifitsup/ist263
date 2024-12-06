@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Week 11 Partic</title>
+    <script>
+        function changeText() {
+            document.getElementById("response").innerHTML = a;
+        }
+
+        const cuseTempAPI = "https://api.weather.gov/gridpoints/BGM/52,99/forecast";
+        function getSyracuseTemp() {
+            fetch(cuseTempAPI)
+            .then((response) => {
+                if (!response.ok) {
+                throw new Error("Network response was not ok");
+            }   
+                return response.json();
+            })
+            .then((data) => {
+                console.log(data);
+                time = Date(data.properties.periods[0].startTime);
+                temp = data.properties.periods[0].temperature;
+                forecast = data.properties.periods[0].detailedForecast;
+                icon = data.properties.periods[0].icon;
+                console.log(icon)
+                document.getElementById("icon").setAttribute("src", icon);
+                document.getElementById("time").innerHTML = time;
+                document.getElementById("temp").innerHTML = temp + "°F";
+                document.getElementById("forecast").innerHTML = forecast;
+            })
+            .catch((error) => {
+                console.error("Error:", error);
+          });
+      }
+    </script>
+    <style>
+        .mobile-container {
+        max-width: 390px;
+        height: 844px;
+        margin: auto;
+        background-color: black;
+        color: white;
+        border-radius: 10px;
+      }
+      .content {
+        padding: 20px;
+      }
+      .button {
+        position: absolute;
+        top: 50%;
+        -ms-transform : translateY(-50%);
+        transform: translateY(-50%);
+    }
+    </style>
+    <body>
+        <div class="mobile-container">
+            <div class="button">
+                <button onclick="getSyracuseTemp()">Get Syracuse Weather</button>
+            </div>
+            <h2 id="cuse-weather"></h2>
+            <div class="content">
+                <img id="icon" src="" />
+                <p id="time"></p>
+                <p id="temp"></p>
+                <p id="forecast"></p>
+            </div>
+        </div> 
+    </body> 
