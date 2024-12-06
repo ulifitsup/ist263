@@ -20,6 +20,10 @@ nav a:hover {
     background-color:#F3C623;
 }
 
+nav a:visited {
+   color: rgb(240, 0, 0);
+}
+
 header {
     margin: 40px;
 }
